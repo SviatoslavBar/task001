@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #032541;
+    display: grid;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    grid-template-columns: 50px 50px;
+}
+.filmSelect {
+    margin: 0 auto;
+}
+
+.filmSelect span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 50px 100px 100px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.detailSpan,
+.detailSpan2 {
+    background: url(658625-200.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    font-size: 47px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 1;
+}
+.loadMore {
+    margin: 50px;
+    text-align: center;
+}
+
+.loadMore span {
+    width: 100px;
+    font-size: 25px;
+    cursor: pointer;
+}

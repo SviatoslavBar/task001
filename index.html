@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="search" id="alpha">📖</div>
+        <div class="search" id="search">🔍</div>
+    </nav>
+
+    <div class="container">
+        <!-- ///// filter -->
+        <div class="filmSelect navGrid">
+            <span id="all">Всі</span>
+            <span id="popular">Популярні</span>
+            <span id="newest">Найновіші</span>
+        </div>
+
+        <!-- ////////// film container -->
+        <div class="gridContainer">
+            <section class="basic-grid" id="section"></section>
+        </div>
+
+        <div class="loadMore" id="more">
+            <span>Більше...</span>
+        </div>
+
+        <!-- /////////// popup details -->
+        <div class="popupBox" id="detailsBlock">
+            <div class="image" id="picture"></div>
+            <div class="name" id="boxName"></div>
+            <div class="rating" id="info"></div>
+            <div class="about" id="review"></div>
+            <div class="date" id="releaseDate"></div>
+            <div class="adult" id="adultRating"></div>
+        </div>
+        <!-- ///////// modal search -->
+        <div class="searchModal">
+            <input type="text" placeholder="Тицькай назву сюди..." id="inputText">
+        </div>
+        <div class="outGray" id="outGray"></div>
+
+        <!-- //////// alphabet modal -->
+        <div class="alphabetBox" id="alphabetBox"></div>
+        
+    </div>
+
+    <script src="js/events.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>

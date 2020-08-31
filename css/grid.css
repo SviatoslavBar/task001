@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.search {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-left: 1px solid;
+    border-right: 1px solid;
+
+}
+
+.year {
+    padding: 5px;
+    font-size: 14px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.detailsBlock {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 36px 14px 395px 100px;
+
+    max-width: 1100px;
+    position: fixed;
+    left: 50%;
+    margin-left: -550px;
+    top: 50%;
+    margin-top: -340px;
+    z-index: 100;
+    display: none;
+    background: white;
+}
+
+
+
+
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 240px));
+    justify-content: center;
+}
+
+.gridContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.poster {
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid;
+}
+
+.lowerBox {
+    min-height: 70px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 33px 158px 50px;
+    grid-template-rows: 30px 350px 55px 30px;
+
+}
+
+.voteSpan {
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-size: cover;
+}
+
+.name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.rating {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: gray;
+    font-size: 13px;
+}
+
+.about {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.date {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.adult {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.filmRate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+    margin-top: 330px;
+    border-radius: 100%;
+}
